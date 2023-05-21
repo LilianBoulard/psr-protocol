@@ -1,4 +1,4 @@
-# Proposition de protocols server/robot
+# Proposition du protocol server/robot
 
 ## Description des fichiers
 
