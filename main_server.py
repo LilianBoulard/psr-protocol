@@ -43,7 +43,7 @@ def register_player(player_name: str, robot_address: str,
     auth : str
         Une chaîne de caractères secrète entre le client et le serveur,
         permettant au client de manipuler le joueur (le supprimer ou le mettre
-        à jour).
+        à jour par exemple).
         Elle est définie lors du premier `put`. Elle est ensuite nécessaire
         pour toute requête `delete` ou `put` ultérieure.
 
@@ -122,7 +122,7 @@ def control_robot(player_name: str, command: Command):
 
 
 @app.get("/player/{player_name}/bonus")
-def get_player_bonus(player_name: str):
+def get_player_bonus(player_name: str, auth: str):
     """
     Retourne le nombre de bonus du joueur.
 
@@ -133,6 +133,9 @@ def get_player_bonus(player_name: str):
     ----------
     player_name : str
         Le nom du joueur.
+    auth : str
+        La chaîne de caractères secrète entre le client et le serveur, définie
+        au moment de l'enregistrement du joueur.
 
     Raises
     ------
