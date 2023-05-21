@@ -21,10 +21,6 @@ class Command(BaseModel):
         Une chaîne de caractères permettant au robot d'identifier
         l'authenticité de l'auteur de la commande.
         L'implémentation est propre à chaque paire client/robot.
-        Il est recommandé d'utiliser du chiffrement symétrique, tel qu'AES.
-        Il est fortement déconseillé d'utiliser du chiffrement asymétrique,
-        tel que RSA, car il est coûteux d'encrypter et de décrypter
-        (ce qui est important lorsqu'on utilise des Raspberry Pi).
     """
     payload: dict
     auth: str
