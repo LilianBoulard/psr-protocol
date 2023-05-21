@@ -54,7 +54,7 @@ def register_player(player_name: str, robot_address: str,
     403
         L'authentification a échoué (uniquement pour les `put` ultérieurs).
     404
-        Le robot n'a pas pu être enregistré car il n'est pas joignable.
+        Le robot n'a pas pu être enregistré car il est injoignable.
     422
         Erreur de validation du schéma.
 
