@@ -79,7 +79,7 @@ def delete_player(player_name: str, auth: str):
     ------
     200
         Requête valide: joueur supprimé.
-        Note: la chaîne de caractères secrète est oubliée.
+        Note: la chaîne de caractères secrète (`auth`) est oubliée.
     403
         L'authentification a échoué.
     404
@@ -127,7 +127,7 @@ def get_player_bonus(player_name: str):
     Retourne le nombre de bonus du joueur.
 
     Les bonus permettent de contrer les pénalités.
-    Les bonus sont affectés par le serveur.
+    Les bonus sont ajoutés par le serveur.
 
     Parameters
     ----------
