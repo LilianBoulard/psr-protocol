@@ -21,6 +21,8 @@ class Command(BaseModel):
         Une chaîne de caractères permettant au robot d'identifier
         l'authenticité de l'auteur de la commande.
         L'implémentation est propre à chaque paire client/robot.
+        Note: cette valeur est différente de celle utilisée pour
+        enregistrer le joueur auprès du serveur.
     """
     payload: dict
     auth: str
